@@ -3,7 +3,7 @@ import { ModalService } from '../services/modal.service';
 
 @Component({
   selector: 'app-nav',
-  templateUrl: './nav.component.html', 
+  templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.css'],
 })
 export class NavComponent implements OnInit {
@@ -11,6 +11,6 @@ export class NavComponent implements OnInit {
   ngOnInit(): void {}
   public openModal = ($event: Event) => {
     $event.preventDefault();
-    this.modal.toggleModal();
+    this.modal.toggleModal('auth');
   };
 }
