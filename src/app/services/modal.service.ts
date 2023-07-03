@@ -7,10 +7,10 @@ export class ModalService {
   private visible: boolean = false;
 
   constructor() {}
-  isModalOpen = () => {
+  public isModalOpen = () => {
     return this.visible;
   };
-  toggleModal = () => {
+  public toggleModal = () => {
     this.visible = !this.visible;
   };
 }
